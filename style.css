@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Figtree", sans-seri;
+    font-optical-sizing: auto;
+}
+
+.w-b {
+    border: 2px solid white;
+}
+.r-b{
+    border: 2px solid red;
+}
+
+a.nav-link {
+    color: white;
+}
+
+a.nav-link:hover {
+    opacity: 111111;
+    transition: .2s linear;
+    color: rgb(255, 254, 254);
+}
+
+.navbar-nav:hover a.nav-link:not(:hover) {
+    opacity: 0.5;
+    transition: .2s linear;
+    color: rgb(244, 241, 241);
+}
+
+.b-br {
+    border: 2px solid blue;
+}
+
+.vh-100 {
+    height: 100vh;
+    width: 100%;
+}
+
+/* hover button  */
+/* From Uiverse.io by Saad3092003 */
+button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+button.learn-more {
+    width: 12rem;
+    height: auto;
+}
+
+button.learn-more .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.329);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: #052358;
+    border-radius: 1.625rem;
+}
+
+button.learn-more .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+}
+
+button.learn-more .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+}
+
+button.learn-more .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.29rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+    transform: rotate(45deg);
+}
+
+button.learn-more .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: rgba(255, 255, 255, 0.459);
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+button:hover .circle {
+    width: 100%;
+    box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.361);
+}
+
+button:hover .button-text {
+    transform: translate(-1.7rem, 0);
+}
+
+button:hover .circle .icon.arrow {
+    background: #fff;
+    transform: translate(8.7rem, 0);
+}
+
+button:active .circle .icon.arrow {
+    transform: translate(9.5rem, 0);
+    transition: all 0.3s;
+}
+
+button:active .circle {
+    transform: scale(0.9);
+    transition: all 0.3s;
+    box-shadow: 0 0 5px 0.5px white;
+}
+
+button:hover .button-text {
+    color: #fff;
+}
+
+button:active .button-text {
+    color: rgba(255, 255, 255, 0.459);
+}
+.home-Section h1{
+    font-size: 90px;
+    font-weight: bold;
+}
+.home-Section p{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* second-conatainer  */
+.h-p{
+    height: 100%;
+    width: 100%;
+}
+.vh-100 {
+    height: 100vh;
+}
+
+.card-box {
+    height: 450px;
+}
+.img-card{
+    height: 100%;
+    width: 100%;
+}
+
+.card-2 {
+    height: 415px;
+    width: 96%;
+    color: white;
+}
+
+.card-2:before {
+    content: '';
+    position: absolute;
+    background-color: #fffffff3;
+    height: 100%;
+    width: 100%;
+    /* top: 0; */
+    left: 0;
+    bottom: -100%;
+    transition: .2s linear;
+}
+
+.koi:hover .card-2:before {
+    bottom: 0;
+    transition: 0.2 linear;
+    color: black;
+}
+
+.koi:hover .card-2{
+    color: black;
+}
+
+
+.text-container {
+    font-size: 2.5rem;
+    font-weight: bold;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    top: 240px;
+}
+
+.text-container span {
+    position: absolute;
+    opacity: 0;
+    top: 0px;
+    z-index: 111;
+    /* border: 2px solid red; */
+    
+}
+
+/* Animations for different text */
+.text1 {
+    animation: changeText 8s infinite;
+}
+
+.text2 {
+    animation: changeText 8s infinite 2s;
+}
+
+.text3 {
+    animation: changeText 8s infinite 4s;
+}
+
+.text4 {
+    animation: changeText 8s infinite 6s;
+}
+
+@keyframes changeText {
+    0%, 20% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    25%, 100% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+}
+
+
+
+
+.carousel-img{
+    width: 100%;
+    height: 100vh;
+
+}
+
+.card-emp-text{
+    height: 280px;
+    /* border: 2px solid rgb(190, 15, 15); */
+}
+.card-img1{
+    height: 285px;
+    position: relative;
+    /* border:2px solid blue; */
+    overflow: hidden;
+}
+.card-img2{
+    height: 274px;
+    position: relative;
+    overflow: hidden;
+}
+.card-data{
+    height: 60%;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    bottom: -120px;
+    overflow: hidden;
+    transition: 0.2s linear;
+}
+.card-data:hover{
+    bottom: 0;
+    transition: .2s linear;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsivv  */
+@media only screen and (max-width: 576px){
+    .home-Section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+    .home-Section h1{
+        font-size: 50px;
+    }
+    .home-Section p{
+        font-size: 18px;
+    }
+    .home-Section button{
+        text-align: end;
+        margin-left: 50px;
+    }
+
+    .card-img1{
+        height: 400px;
+        
+    }
+    .card-img2{
+        height: 400px;
+    }
+    .card-data{
+        bottom: -145px;
+        /* justify-content: space-between; */
+        height: 200px;
+    }
+    .card-data span{
+        width: 100%;
+        /* border: 2px solid red; */
+        justify-content: space-between;
+    }
+} 
